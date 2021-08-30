@@ -1,0 +1,1267 @@
+<!DOCTYPE HTML>
+  <html lang="">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.createjs.com/1.0.0/easeljs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+    <script src="hero.1.0.0.js"></script>
+    <script src="fusion.1.0.0.js"></script>
+    </head>
+  <body>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+  html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+  }
+  body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  .hero-element {
+    position: absolute;
+  }
+  .fusion--player {
+    background-color: #fff;
+  }
+  
+  
+        #guid_5162e834_d235_45f3_a24b_43ef3ca86ffa {
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  background-color: #fff;
+}
+#guid_e7bc3137_1701_4507_99bf_b59b3282d661 {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 591.1234130859375, 247.99778747558594);
+}
+#guid_822448a2_bd74_40fe_80d3_218ff408b6fc {
+  width: 72.146px;
+  height: 75.646px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 783.2497253417969, 480.8794240951538);
+  pointer-events: none;
+}
+#guid_a70b4ebe_6eaa_421a_bb0c_50e820f6754b {
+  width: 69.278px;
+  height: 71.515px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 784.7184600830078, 482.196569442749);
+  pointer-events: none;
+}
+#guid_2f211214_aa4f_4df1_8065_1f706e404448 {
+  width: 14.506px;
+  height: 14.506px;
+  border-radius: 50% 50%;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 822.9716186523438, 496.5876159667969);
+  background-color: #6c63ff;
+}
+#guid_e1cee930_ae7b_41fd_a1e2_ce14e4753a58 {
+  width: 21.367px;
+  height: 18.832px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 796.6119842529297, 517.2737741470337);
+  pointer-events: none;
+}
+#guid_a5c05131_261e_4c02_9f01_8bd0ff08d957 {
+  width: 7.88px;
+  height: 7.046px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 799.6578369140625, 525.4455871582031);
+  pointer-events: none;
+}
+#guid_14142e07_c4b6_4d58_b91e_a602cc360a63 {
+  width: 7.88px;
+  height: 7.046px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 793.7710418701172, 530.7846460342407);
+  pointer-events: none;
+}
+#guid_a80ecf3c_26b1_468e_8d98_f59f589a07a4 {
+  width: 7.88px;
+  height: 7.046px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 790.7576751708984, 533.5201797485352);
+  pointer-events: none;
+}
+#guid_63dfe470_b18c_49f6_b7a0_633bfb41b359 {
+  width: 15.295px;
+  height: 13.526px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 793.4651412963867, 525.039623260498);
+  pointer-events: none;
+}
+#guid_8cf93eb6_9eff_444d_aa6c_95e0763714d7 {
+  width: 4.558px;
+  height: 4.255px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 786.1218032836914, 539.7312831878662);
+  pointer-events: none;
+}
+#guid_c27f8b12_e64b_4cc1_bf33_72159d825a8b {
+  width: 37.823px;
+  height: 114.224px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 726.714225769043, 374.26444816589355);
+  pointer-events: none;
+}
+#guid_72cbd78b_597a_4b2f_bfc7_1c09a095417e {
+  width: 69.162px;
+  height: 214.972px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 680.6927871704102, 197.1996307373047);
+  pointer-events: none;
+}
+#guid_6293d648_1e95_49dc_8b9e_eedd47a0dc3f {
+  width: 112.433px;
+  height: 110.725px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 645.7499694824219, 274.1688995361328);
+  pointer-events: none;
+}
+#guid_d01fef23_3d41_4152_83bc_38480234ae55 {
+  width: 102.285px;
+  height: 100.618px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 650.6333084106445, 279.5322151184082);
+  pointer-events: none;
+}
+#guid_9c81f729_6a55_4e66_b8b6_5818f63070e3 {
+  width: 21.157px;
+  height: 26.628px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 739.4124374389648, 307.9271545410156);
+  pointer-events: none;
+}
+#guid_b8a7f161_67ee_42ac_8b26_f28dc2dc89b1 {
+  width: 21.157px;
+  height: 26.628px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 734.5042495727539, 310.95080947875977);
+  pointer-events: none;
+}
+#guid_49155071_124b_4e46_983b_bae012375127 {
+  width: 10.322px;
+  height: 12.694px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 726.3246078491211, 312.7672996520996);
+  pointer-events: none;
+}
+#guid_4da5a8c5_ed51_479b_be47_37d96ebe3993 {
+  width: 32.224px;
+  height: 40.862px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 692.3086700439453, 306.3365135192871);
+  pointer-events: none;
+}
+#guid_e221da54_3e67_4b01_a948_56d898c9e4c9 {
+  width: 32.224px;
+  height: 40.862px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 687.3773803710938, 309.373966217041);
+  pointer-events: none;
+}
+#guid_fe4cacad_567c_406c_9b8c_73709dc5cb39 {
+  width: 32.225px;
+  height: 40.862px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 676.1848220825195, 316.2677116394043);
+  pointer-events: none;
+}
+#guid_b481953b_cf23_441a_960d_a51947195763 {
+  width: 32.224px;
+  height: 40.862px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 671.2548980712891, 319.3051223754883);
+  pointer-events: none;
+}
+#guid_62a1a446_21ee_46c0_ac14_8b8119f06f7c {
+  width: 32.224px;
+  height: 40.862px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 660.0611114501953, 326.1991271972656);
+  pointer-events: none;
+}
+#guid_75406ed5_61ff_4b80_82ea_66eba982028c {
+  width: 32.224px;
+  height: 40.862px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 655.1315307617188, 329.23533630371094);
+  pointer-events: none;
+}
+#guid_916c632a_3f1f_4d5f_92c7_05dc3a7ec893 {
+  width: 0.834px;
+  height: 0.834px;
+  border-radius: 50% 50%;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 772.3526611328125, 429.06402587890625);
+  background-color: #fff;
+}
+#guid_178f91cf_f7af_426f_b7c7_3bcbda8bdfc0 {
+  width: 79px;
+  height: 66.5px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 722.4521026611328, 491.4490785598755);
+  pointer-events: none;
+}
+#guid_96ce01a0_8495_41e8_8df1_d350278647c4 {
+  width: 180.752px;
+  height: 105px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 673.5002899169922, 531.7929437160492);
+  pointer-events: none;
+}
+#guid_510531e4_3a52_4ec1_b130_81c0e1aa619b {
+  width: 79px;
+  height: 66.5px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 722.4521026611328, 480.8928632736206);
+  pointer-events: none;
+}
+#guid_5a51620a_64fd_4eb5_b731_b318f7c5fd6e {
+  width: 14.501px;
+  height: 17.157px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 745.4023132324219, 512.925163269043);
+  pointer-events: none;
+}
+#guid_eb6e25b8_8d8c_4acd_87a9_4977e88bd5d5 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50% 50%;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 696.046630859375, 547.2296142578125);
+  background-color: #2f2e41;
+}
+#guid_9d2be54c_662f_41ae_afb0_9da501fc20a6 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50% 50%;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 810.9579467773438, 547.8408203125);
+  background-color: #2f2e41;
+}
+#guid_4ea8818e_b960_49ed_8069_a350c7d6ccd8 {
+  width: 180.27px;
+  height: 17px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 673.7619171142578, 590.2025175690651);
+  pointer-events: none;
+}
+#guid_2121ebc3_9e28_4e7b_a1fd_4c376e96f42f {
+  width: 54.568px;
+  height: 144.012px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 64.9873046875, 659.7117233276367);
+  pointer-events: none;
+}
+#guid_914cd830_b574_45d8_8f5f_c1453a0644a9 {
+  width: 31.817px;
+  height: 143.829px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 81.04994201660156, 659.129508972168);
+  pointer-events: none;
+}
+#guid_3490fd18_2205_4b71_aa9e_7b65e3b38805 {
+  width: 13.301px;
+  height: 17.718px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 73.41151428222656, 696.5286178588867);
+  pointer-events: none;
+}
+#guid_6d92725f_f447_4ae9_8bfe_b36fa9754920 {
+  width: 15.579px;
+  height: 19.751px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 90.76036071777344, 728.7616500854492);
+  pointer-events: none;
+}
+#guid_e8820ba7_5c19_49e5_837a_74c822928112 {
+  width: 10.427px;
+  height: 2.66px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 97.04911804199219, 647.5072770118713);
+  pointer-events: none;
+}
+#guid_ed8fca67_0754_4782_a4f7_055129e5f569 {
+  width: 111.262px;
+  height: 99.452px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 81.07423400878906, 705.8792037963867);
+  pointer-events: none;
+}
+#guid_d7f8f239_ce5f_4b04_914e_6b46b71f2eea {
+  width: 111.48px;
+  height: 96.644px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 81.284423828125, 708.144401550293);
+  pointer-events: none;
+}
+#guid_fb626729_401a_4a00_af1f_80f95e2eca94 {
+  width: 5.172px;
+  height: 21.626px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 134.63072204589844, 714.966911315918);
+  pointer-events: none;
+}
+#guid_130e1116_682a_4ea8_859b_79bc8c9b67bb {
+  width: 23.831px;
+  height: 7.545px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 121.81446838378906, 759.7517013549805);
+  pointer-events: none;
+}
+#guid_e2997a48_8f33_4922_90d7_671579b44506 {
+  width: 8.869px;
+  height: 6.395px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 257.14064025878906, 716.5413131713867);
+  pointer-events: none;
+}
+#guid_c7a0ea7e_0879_4236_af10_aaf0e471bb68 {
+  width: 126.096px;
+  height: 141.857px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 834.5593719482422, 643.5939865112305);
+  pointer-events: none;
+}
+#guid_bbf13db9_29db_4983_9020_00f04ce57a5b {
+  width: 109.828px;
+  height: 142.044px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 834.3563079833984, 643.0697555541992);
+  pointer-events: none;
+}
+#guid_bae7a3a9_8d4d_4949_8444_c9d9712a26cd {
+  width: 26.258px;
+  height: 7.035px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 809.9847183227539, 707.898551940918);
+  pointer-events: none;
+}
+#guid_2ed746bc_8619_45d5_a3fa_6dd481cdf9c9 {
+  width: 7.913px;
+  height: 29.384px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 888.2508392333984, 703.8900680541992);
+  pointer-events: none;
+}
+#guid_8619d1fd_700f_4e7d_a3df_4a392388c3a8 {
+  width: 8.3px;
+  height: 10.427px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 809.9138488769531, 629.8251070976257);
+  pointer-events: none;
+}
+#guid_83557afe_25c4_4fd1_9120_1222bee30614 {
+  width: 78.193px;
+  height: 179.216px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 933.3548736572266, 608.0090255737305);
+  pointer-events: none;
+}
+#guid_cb743138_06ee_4141_900e_05e492d72a47 {
+  width: 36.145px;
+  height: 178.98px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 948.7685852050781, 607.3468551635742);
+  pointer-events: none;
+}
+#guid_2add78ad_8b24_4254_9e82_3d2cd2e906e4 {
+  width: 20.18px;
+  height: 17.864px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 913.6917724609375, 627.8541827201843);
+  pointer-events: none;
+}
+#guid_d9ed9606_87bc_4345_92dd_522d0465e444 {
+  width: 13.577px;
+  height: 27.33px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 963.8717651367188, 666.0964860916138);
+  pointer-events: none;
+}
+#guid_5b8f2e7c_f159_47f5_8e09_fb2c3290adc0 {
+  width: 12.296px;
+  height: 4.845px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 947.3707427978516, 591.2745862007141);
+  pointer-events: none;
+}
+#guid_56f3dd94_5634_441b_a569_2e89c4a39c54 {
+  width: 1325.113px;
+  height: 157.711px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 3.7633819580078125, 674.2913131713867);
+  pointer-events: none;
+}
+#guid_c5dd416e_6e11_4a5e_9f54_964d528a32ae {
+  width: 57.37px;
+  height: 13.814px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 303.62092208862305, 275.46806716918945);
+  pointer-events: none;
+}
+#guid_c8570bc0_693d_4529_bd13_5780a1ab4b11 {
+  width: 57.37px;
+  height: 13.814px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 276.8820037841797, 442.99967193603516);
+  pointer-events: none;
+}
+#guid_eba0ff8a_5b06_4c2d_addf_ce3001a6a2c8 {
+  width: 144.089px;
+  height: 66.934px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 869.5772094726562, 92.7054672241211);
+  pointer-events: none;
+}
+#guid_6dde1e10_1b8d_47c7_95f2_a8daf6646679 {
+  width: 90px;
+  height: 90px;
+  border-radius: 50% 50%;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 99.76399993896484, 85.22100067138672);
+  background-color: #f2f2f2;
+}
+#guid_5ec456b1_0f51_473b_8141_34b70d2ed1ca {
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50%;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 554.4544677734375, 28.221500396728516);
+  background-color: #2f2e41;
+}
+#guid_cc48dcd4_6d67_4de1_aa28_d60cfc4695e7 {
+  width: 76px;
+  height: 76px;
+  border-radius: 50% 50%;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 567.5553588867188, 39.221500396728516);
+  background-color: #2f2e41;
+}
+#guid_8c322892_8bad_4ced_9750_5f07d7371795 {
+  width: 26.391px;
+  height: 68.968px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 583.7655334472656, 730.77880859375);
+  pointer-events: none;
+}
+#guid_c6cbcb76_003b_42d3_bc20_e4047d912a51 {
+  width: 62.629px;
+  height: 44.933px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 578.2523803710938, 785.7949142456055);
+  pointer-events: none;
+}
+#guid_da391602_cd15_42a0_a8be_7896852474d6 {
+  width: 62.332px;
+  height: 66.014px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 425.588134765625, 721.8378295898438);
+  pointer-events: none;
+}
+#guid_2200c26e_0773_4e9b_bf89_b43e3f16e89f {
+  width: 56.33px;
+  height: 66.859px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 383.46410179138184, 763.8720016479492);
+  pointer-events: none;
+}
+#guid_368195b3_f613_419b_924a_d5f3049cdd87 {
+  width: 68px;
+  height: 64px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 579.6762084960938, 334.0844421386719);
+  background-color: #9e616a;
+}
+#guid_2c990828_2671_44b2_89d4_9c1e76fdf490 {
+  width: 145.783px;
+  height: 322.308px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 482.9426612854004, 443.9060287475586);
+  pointer-events: none;
+}
+#guid_911dbb3c_f44f_452e_917b_fafb90ea2dbc {
+  width: 41.245px;
+  height: 166.271px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 575.8907165527344, 605.059814453125);
+  pointer-events: none;
+}
+#guid_84dce187_8715_485e_8cce_f76aa888ce3f {
+  width: 126.193px;
+  height: 220.91px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 555.1271209716797, 166.32258224487305);
+  pointer-events: none;
+}
+#guid_caf24cc2_26b4_478a_8841_57fceeeced03 {
+  width: 61.759px;
+  height: 61.759px;
+  border-radius: 50% 50%;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 580.0165405273438, 53.453399658203125);
+  background-color: #9e616a;
+}
+#guid_8d3cae67_8f20_44cb_a3cd_358f5f074c8a {
+  width: 70.726px;
+  height: 40.395px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 579.3488235473633, 47.685401916503906);
+  pointer-events: none;
+}
+#guid_a20f2543_7660_4cef_ad11_b8c2c7ea4427 {
+  width: 62.701px;
+  height: 141.125px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 490.35047721862793, 0.0001373291015625);
+  pointer-events: none;
+}
+#guid_01cfdd90_7aef_4489_b011_f5f185d09bf6 {
+  width: 1324.788px;
+  height: 2.381px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -0.002777099609375, 829.3956832885742);
+  pointer-events: none;
+}
+#guid_01ac6bca_f00a_435b_9866_54cfb7d73db0 {
+  width: 45.887px;
+  height: 47px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 471.63937163352966, 434.81322288513184);
+  pointer-events: none;
+}
+#guid_68ee6827_1254_434e_b0f5_c190c2e4bea7 {
+  width: 37.302px;
+  height: 114.355px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 464.4402245879173, 364.07271575927734);
+  pointer-events: none;
+}
+#guid_adced330_e750_47b0_a3ca_95c65ab4e04a {
+  width: 69.162px;
+  height: 214.972px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 464.79159688949585, 203.79294967651367);
+  pointer-events: none;
+}
+#guid_1ecefcd0_9229_40ad_9791_9786ab121732 {
+  width: 14.506px;
+  height: 14.506px;
+  border-radius: 50% 50%;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 706.4127197265625, 286.5305480957031);
+  background-color: #6c63ff;
+}
+#guid_ca46f2d7_8970_4492_a157_ca6e9156f971 {
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, -4, 83);
+}
+#guid_c2cc1bfd_57c0_496c_8391_4f414ee62f70 {
+  width: 275px;
+  font-family: Javanese Text;
+  font-size: 50px;
+  color: #181364;
+  font-weight: 400;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 202, 392);
+}
+#guid_8e83f088_89d7_4b83_8968_6112aa34e29f {
+  width: 195px;
+  font-family: Cascadia Code;
+  font-size: 82px;
+  color: #430835;
+  font-weight: 700;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 184, 459);
+}
+#guid_470bf6a6_6db3_415f_b34b_4a2407911145 {
+  width: 257px;
+  font-family: Cascadia Code;
+  font-size: 62px;
+  color: #0a2949;
+  text-align: center;
+  font-weight: 400;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 834, 95);
+}
+#guid_44fbac84_ca07_47de_bcdb_6dacc0c99bf5 {
+  width: 369px;
+  font-family: Cascadia Code;
+  font-size: 34px;
+  color: #430835;
+  font-weight: 700;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 142, 959);
+}
+#guid_0f8f05b3_c7d7_45e8_8156_e223077b1ae9 {
+  width: 91px;
+  font-family: Cascadia Code;
+  font-size: 30px;
+  color: #430835;
+  font-weight: 700;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 1392, 118);
+}
+#guid_c900786a_7174_43b8_82ce_2cb270b45a3d {
+  width: 126px;
+  font-family: Cascadia Code;
+  font-size: 30px;
+  color: #430835;
+  font-weight: 700;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 1676, 118);
+}
+#guid_ff25cc55_f0d7_4178_a3cd_2721e65eca68 {
+  width: 73px;
+  font-family: Cascadia Code;
+  font-size: 30px;
+  color: #430835;
+  font-weight: 700;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 1540, 118);
+}
+#guid_0e42a456_9ee5_441c_bf03_65f846da2e5f {
+  width: 78px;
+  height: 78px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 142, 118);
+}
+#guid_74eca0c3_3e17_47c6_bbba_8c7b649f0a4b {
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  background-color: #282c31;
+}
+#guid_a950ff9d_4552_4c61_b020_30cdbac87cda {
+  width: 413px;
+  font-family: Barlow;
+  font-size: 96px;
+  color: #fff;
+  font-weight: 900;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 200, 346);
+}
+#guid_fe42eb62_1e77_46af_9362_6de97b614aa3 {
+  width: 205px;
+  height: 65px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 858, 508);
+}
+#guid_f00da2e9_228e_4cff_80c5_a39851b6c5d4 {
+  width: 45px;
+  height: 30.753px;
+  transform-origin: 50% 50%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  pointer-events: none;
+}
+
+      
+
+  </style>
+
+  
+
+        <!-- /////////////////////// -->
+        <!-- Player -->
+        <div class="wrapper" style="position: relative; width: 100%; height: 100%;">
+          <div id="player" class="fusion--player" style="width: 100%; height: 100%; ">
+            <div class="fusion--viewport">
+            
+            
+
+            
+            <div class="fusion--scene fusion--scene--default scene-guid_5162e834_d235_45f3_a24b_43ef3ca86ffa">
+              <div class="fusion--scene--content">
+                
+<div id="guid_5162e834_d235_45f3_a24b_43ef3ca86ffa" class="artboard scene" >
+<div id="guid_e7bc3137_1701_4507_99bf_b59b3282d661" class="hero-element" >
+<div id="guid_822448a2_bd74_40fe_80d3_218ff408b6fc" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -661.7353515625px; top: -494.63153076171875px;">
+        <path id="guid_822448a2_bd74_40fe_80d3_218ff408b6fc-path" d="M 689.910 568.970 L 718.768 535.946 L 719.069 536.209 L 724.376 530.136 L 724.075 529.873 L 732.935 519.733 C 734.327 518.141 734.164 515.721 732.572 514.330 L 711.112 495.578 C 709.520 494.186 707.101 494.349 705.709 495.941 L 699.531 503.011 L 699.042 502.603 L 695.426 506.933 L 695.818 507.260 L 694.999 508.197 L 694.583 507.849 L 690.968 512.180 L 691.287 512.446 L 662.684 545.178 C 662.014 545.942 661.676 546.942 661.744 547.956 C 661.812 548.969 662.281 549.915 663.048 550.582 L 684.507 569.334 C 686.101 570.723 688.517 570.560 689.910 568.970 Z" fill="#3f3d56"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_a70b4ebe_6eaa_421a_bb0c_50e820f6754b" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -663.3212280273438px; top: -496.2054138183594px;">
+        <path id="guid_a70b4ebe_6eaa_421a_bb0c_50e820f6754b-path" d="M 663.551 548.688 C 663.177 548.011 663.266 547.172 663.774 546.589 L 707.254 496.833 C 707.921 496.070 709.080 495.992 709.843 496.659 L 714.409 500.649 L 714.230 500.738 C 713.601 501.054 713.170 501.663 713.081 502.362 C 712.992 503.060 713.257 503.758 713.788 504.221 L 723.921 513.076 C 724.470 513.479 725.179 513.597 725.830 513.393 C 726.470 513.194 726.976 512.700 727.191 512.064 L 727.256 511.875 L 731.973 515.996 C 732.735 516.664 732.813 517.822 732.147 518.586 L 690.664 566.057 C 688.893 568.079 685.819 568.286 683.793 566.520 L 663.949 549.178 C 663.789 549.039 663.654 548.873 663.551 548.688 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_2f211214_aa4f_4df1_8065_1f706e404448" class="hero-element" >
+</div>
+<div id="guid_e1cee930_ae7b_41fd_a1e2_ce14e4753a58" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -681.5740966796875px; top: -530.975830078125px;">
+        <path id="guid_e1cee930_ae7b_41fd_a1e2_ce14e4753a58-path" d="M 701.889 549.651 L 681.791 532.088 C 681.527 531.857 681.500 531.457 681.731 531.193 C 681.961 530.929 682.362 530.902 682.626 531.133 L 702.725 548.696 C 702.988 548.926 703.015 549.327 702.785 549.591 C 702.554 549.855 702.153 549.882 701.890 549.651 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_a5c05131_261e_4c02_9f01_8bd0ff08d957" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -686.4329833984375px; top: -539.0257568359375px;">
+        <path id="guid_a5c05131_261e_4c02_9f01_8bd0ff08d957-path" d="M 693.261 545.915 L 686.650 540.138 C 686.386 539.907 686.359 539.507 686.590 539.243 C 686.820 538.979 687.221 538.952 687.485 539.182 L 694.096 544.959 C 694.360 545.190 694.387 545.591 694.156 545.855 C 693.926 546.119 693.525 546.146 693.261 545.915 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_14142e07_c4b6_4d58_b91e_a602cc360a63" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -682.6099243164062px; top: -543.3997802734375px;">
+        <path id="guid_14142e07_c4b6_4d58_b91e_a602cc360a63-path" d="M 689.438 550.289 L 682.827 544.512 C 682.563 544.281 682.536 543.881 682.767 543.617 C 682.997 543.353 683.398 543.326 683.662 543.557 L 690.273 549.333 C 690.537 549.564 690.564 549.965 690.333 550.229 C 690.103 550.493 689.702 550.520 689.438 550.289 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_a80ecf3c_26b1_468e_8d98_f59f589a07a4" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -680.6530151367188px; top: -545.640869140625px;">
+        <path id="guid_a80ecf3c_26b1_468e_8d98_f59f589a07a4-path" d="M 687.481 552.530 L 680.870 546.753 C 680.606 546.522 680.579 546.122 680.810 545.858 C 681.040 545.594 681.441 545.567 681.705 545.798 L 688.316 551.575 C 688.580 551.805 688.607 552.206 688.376 552.470 C 688.146 552.734 687.745 552.761 687.481 552.530 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_63dfe470_b18c_49f6_b7a0_633bfb41b359" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -680.8410034179688px; top: -537.9418334960938px;">
+        <path id="guid_63dfe470_b18c_49f6_b7a0_633bfb41b359-path" d="M 695.084 551.311 L 681.058 539.054 C 680.794 538.823 680.767 538.423 680.998 538.159 C 681.228 537.895 681.629 537.868 681.893 538.099 L 695.919 550.355 C 696.183 550.586 696.210 550.987 695.980 551.251 C 695.749 551.515 695.348 551.542 695.084 551.311 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_8cf93eb6_9eff_444d_aa6c_95e0763714d7" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -678.3336791992188px; top: -551.0582275390625px;">
+        <path id="guid_8cf93eb6_9eff_444d_aa6c_95e0763714d7-path" d="M 681.103 555.047 L 678.703 552.949 C 678.254 552.557 678.208 551.876 678.600 551.427 C 678.992 550.979 679.674 550.933 680.122 551.325 L 682.523 553.422 C 682.971 553.814 683.017 554.496 682.625 554.945 C 682.233 555.393 681.552 555.439 681.103 555.047 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_c27f8b12_e64b_4cc1_bf33_72159d825a8b" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -633.1530151367188px; top: -405.0693359375px;">
+        <path id="guid_c27f8b12_e64b_4cc1_bf33_72159d825a8b-path" d="M 650.783 515.801 C 648.319 513.349 647.067 509.932 647.365 506.469 C 647.663 503.006 649.479 499.853 652.325 497.857 L 633.153 405.069 L 653.838 411.595 L 669.263 501.360 C 672.366 506.476 671.152 513.104 666.437 516.789 C 661.723 520.473 654.997 520.049 650.783 515.801 Z" fill="#9e616a"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_72cbd78b_597a_4b2f_bfc7_1c09a095417e" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -597.5652465820312px; top: -258.0987548828125px;">
+        <path id="guid_72cbd78b_597a_4b2f_bfc7_1c09a095417e-path" d="M 606.467 267.775 L 619.280 258.103 C 619.280 258.103 630.583 257.303 632.585 277.686 C 634.587 298.070 647.121 376.303 647.121 376.303 L 666.728 467.113 L 639.587 473.070 L 618.587 375.070 L 597.565 307.460 L 606.467 267.775 Z" fill="#2f2e41"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_6293d648_1e95_49dc_8b9e_eedd47a0dc3f" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -567.02392578125px; top: -326.0437316894531px;">
+        <path id="guid_6293d648_1e95_49dc_8b9e_eedd47a0dc3f-path" d="M 609.804 435.002 L 567.986 381.220 C 566.437 379.223 566.797 376.349 568.790 374.796 L 630.252 327.006 C 632.249 325.457 635.123 325.816 636.676 327.810 L 678.495 381.592 C 680.044 383.589 679.684 386.463 677.691 388.016 L 616.229 435.806 C 614.232 437.355 611.357 436.996 609.804 435.002 Z" fill="#3f3d56"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_d01fef23_3d41_4152_83bc_38480234ae55" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -572.0974731445312px; top: -331.0968017578125px;">
+        <path id="guid_d01fef23_3d41_4152_83bc_38480234ae55-path" d="M 610.862 430.147 L 572.952 381.391 C 571.576 379.618 571.896 377.066 573.666 375.687 L 629.914 331.951 C 631.687 330.576 634.239 330.895 635.618 332.665 L 673.528 381.421 C 674.903 383.194 674.584 385.745 672.814 387.125 L 616.566 430.861 C 614.793 432.236 612.241 431.917 610.862 430.147 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_9c81f729_6a55_4e66_b8b6_5818f63070e3" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -644.6764526367188px; top: -359.47021484375px;">
+        <path id="guid_9c81f729_6a55_4e66_b8b6_5818f63070e3-path" d="M 664.015 385.706 L 644.890 361.110 C 644.546 360.667 644.626 360.029 645.069 359.684 C 645.512 359.340 646.150 359.420 646.495 359.863 L 665.619 384.459 C 665.964 384.902 665.884 385.540 665.441 385.885 C 664.998 386.229 664.359 386.149 664.015 385.706 Z" fill="#e4e4e4"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_b8a7f161_67ee_42ac_8b26_f28dc2dc89b1" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -641.5064086914062px; top: -361.9340515136719px;">
+        <path id="guid_b8a7f161_67ee_42ac_8b26_f28dc2dc89b1-path" d="M 660.845 388.170 L 641.720 363.574 C 641.376 363.131 641.456 362.493 641.899 362.148 C 642.342 361.804 642.980 361.883 643.325 362.327 L 662.449 386.923 C 662.794 387.366 662.714 388.004 662.271 388.348 C 661.828 388.693 661.190 388.613 660.845 388.170 Z" fill="#e4e4e4"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_49155071_124b_4e46_983b_bae012375127" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -638.3370361328125px; top: -364.3990783691406px;">
+        <path id="guid_49155071_124b_4e46_983b_bae012375127-path" d="M 646.841 376.701 L 638.551 366.039 C 638.207 365.596 638.286 364.958 638.729 364.613 C 639.173 364.269 639.811 364.348 640.155 364.792 L 648.445 375.453 C 648.790 375.896 648.710 376.535 648.267 376.879 C 647.824 377.224 647.186 377.144 646.841 376.701 Z" fill="#e4e4e4"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_4da5a8c5_ed51_479b_be47_37d96ebe3993" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -612.1612548828125px; top: -357.1536865234375px;">
+        <path id="guid_4da5a8c5_ed51_479b_be47_37d96ebe3993-path" d="M 642.567 397.623 L 612.375 358.794 C 612.031 358.351 612.111 357.712 612.554 357.368 C 612.997 357.023 613.635 357.103 613.979 357.546 L 644.171 396.376 C 644.516 396.819 644.436 397.457 643.993 397.801 C 643.550 398.146 642.911 398.066 642.567 397.623 Z" fill="#e4e4e4"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_e221da54_3e67_4b01_a948_56d898c9e4c9" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -608.9912109375px; top: -359.61865234375px;">
+        <path id="guid_e221da54_3e67_4b01_a948_56d898c9e4c9-path" d="M 639.397 400.088 L 609.205 361.259 C 608.861 360.816 608.941 360.177 609.384 359.833 C 609.827 359.488 610.465 359.568 610.810 360.011 L 641.001 398.841 C 641.346 399.284 641.266 399.922 640.823 400.266 C 640.380 400.611 639.741 400.531 639.397 400.088 Z" fill="#e4e4e4"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_fe4cacad_567c_406c_9b8c_73709dc5cb39" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -601.7960205078125px; top: -365.2131042480469px;">
+        <path id="guid_fe4cacad_567c_406c_9b8c_73709dc5cb39-path" d="M 632.202 405.682 L 602.010 366.853 C 601.666 366.410 601.745 365.772 602.188 365.427 C 602.632 365.083 603.270 365.163 603.614 365.606 L 633.807 404.435 C 634.151 404.878 634.072 405.516 633.629 405.861 C 633.186 406.205 632.547 406.125 632.203 405.682 Z" fill="#e4e4e4"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_b481953b_cf23_441a_960d_a51947195763" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -598.6270141601562px; top: -367.67803955078125px;">
+        <path id="guid_b481953b_cf23_441a_960d_a51947195763-path" d="M 629.033 408.147 L 598.841 369.318 C 598.497 368.875 598.576 368.237 599.019 367.892 C 599.462 367.548 600.101 367.627 600.445 368.070 L 630.637 406.900 C 630.982 407.343 630.902 407.981 630.459 408.326 C 630.016 408.670 629.377 408.590 629.033 408.147 Z" fill="#e4e4e4"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_62a1a446_21ee_46c0_ac14_8b8119f06f7c" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -591.4312133789062px; top: -373.272705078125px;">
+        <path id="guid_62a1a446_21ee_46c0_ac14_8b8119f06f7c-path" d="M 621.837 413.742 L 591.645 374.913 C 591.301 374.470 591.381 373.831 591.824 373.487 C 592.267 373.142 592.905 373.222 593.249 373.665 L 623.441 412.495 C 623.786 412.938 623.706 413.576 623.263 413.920 C 622.820 414.265 622.181 414.185 621.837 413.742 Z" fill="#e4e4e4"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_75406ed5_61ff_4b80_82ea_66eba982028c" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -588.2622680664062px; top: -375.7366638183594px;">
+        <path id="guid_75406ed5_61ff_4b80_82ea_66eba982028c-path" d="M 618.668 416.206 L 588.476 377.377 C 588.132 376.934 588.212 376.295 588.655 375.951 C 589.098 375.606 589.736 375.686 590.081 376.129 L 620.272 414.958 C 620.617 415.402 620.537 416.040 620.094 416.384 C 619.651 416.729 619.013 416.649 618.668 416.206 Z" fill="#e4e4e4"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_916c632a_3f1f_4d5f_92c7_05dc3a7ec893" class="hero-element" >
+</div>
+<div id="guid_178f91cf_f7af_426f_b7c7_3bcbda8bdfc0" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -621.8820190429688px; top: -504.2750244140625px;">
+        <path id="guid_178f91cf_f7af_426f_b7c7_3bcbda8bdfc0-path" d="M 700.882 570.775 L 697.882 570.775 L 697.882 543.775 C 697.882 523.617 681.540 507.275 661.382 507.275 C 641.224 507.275 624.882 523.617 624.882 543.775 L 624.882 570.775 L 621.882 570.775 L 621.882 543.775 C 621.882 521.960 639.567 504.275 661.382 504.275 C 683.197 504.275 700.882 521.960 700.882 543.775 L 700.882 570.775 Z" fill="#2f2e41"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_96ce01a0_8495_41e8_8df1_d350278647c4" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -568.951904296875px; top: -531.2747192382812px;">
+        <path id="guid_96ce01a0_8495_41e8_8df1_d350278647c4-path" d="M 745.532 546.295 C 743.483 537.470 735.602 531.236 726.542 531.275 L 590.522 531.275 C 580.892 531.304 572.713 538.330 571.232 547.845 C 569.191 562.058 568.518 576.434 569.222 590.775 C 569.452 596.295 569.862 601.962 570.452 607.775 C 570.832 611.575 571.285 615.442 571.812 619.375 C 573.144 629.042 581.394 636.250 591.152 636.275 L 726.282 636.275 C 735.422 636.318 743.351 629.972 745.312 621.045 C 746.312 616.605 747.139 612.182 747.792 607.775 C 748.642 602.140 749.209 596.466 749.492 590.775 C 750.262 575.836 748.929 560.863 745.532 546.295 Z" fill="#6c63ff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_510531e4_3a52_4ec1_b130_81c0e1aa619b" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -621.8820190429688px; top: -495.7750244140625px;">
+        <path id="guid_510531e4_3a52_4ec1_b130_81c0e1aa619b-path" d="M 700.882 562.275 L 697.882 562.275 L 697.882 535.275 C 697.882 515.117 681.540 498.775 661.382 498.775 C 641.224 498.775 624.882 515.117 624.882 535.275 L 624.882 562.275 L 621.882 562.275 L 621.882 535.275 C 621.882 513.460 639.567 495.775 661.382 495.775 C 683.197 495.775 700.882 513.460 700.882 535.275 L 700.882 562.275 Z" fill="#2f2e41"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_5a51620a_64fd_4eb5_b731_b318f7c5fd6e" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -649.8818969726562px; top: -527.6179809570312px;">
+        <path id="guid_5a51620a_64fd_4eb5_b731_b318f7c5fd6e-path" d="M 663.913 538.855 L 658.913 530.195 C 657.963 528.423 656.025 527.414 654.029 527.653 C 652.033 527.891 650.387 529.329 649.882 531.275 L 649.882 541.275 C 649.882 543.208 651.449 544.775 653.382 544.775 C 655.315 544.775 656.882 543.208 656.882 541.275 L 656.882 540.677 L 657.851 542.355 C 658.817 544.029 660.958 544.603 662.632 543.636 C 664.306 542.670 664.880 540.529 663.913 538.855 Z" fill="#2f2e41"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_eb6e25b8_8d8c_4acd_87a9_4977e88bd5d5" class="hero-element" >
+</div>
+<div id="guid_9d2be54c_662f_41ae_afb0_9da501fc20a6" class="hero-element" >
+</div>
+<div id="guid_4ea8818e_b960_49ed_8069_a350c7d6ccd8" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -569.2220458984375px; top: -590.7750244140625px;">
+        <path id="guid_4ea8818e_b960_49ed_8069_a350c7d6ccd8-path" d="M 749.492 590.775 C 749.209 596.467 748.642 602.140 747.792 607.775 L 570.452 607.775 C 569.862 601.955 569.452 596.288 569.222 590.775 L 749.492 590.775 Z" fill="#3f3d56"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_2121ebc3_9e28_4e7b_a1fd_4c376e96f42f" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -232.10536193847656px; top: -619.1557006835938px;">
+        <path id="guid_2121ebc3_9e28_4e7b_a1fd_4c376e96f42f-path" d="M 232.896 682.663 C 236.314 655.179 253.347 628.100 279.558 619.156 C 269.221 647.444 269.223 678.477 279.564 706.764 C 283.592 717.659 289.206 729.357 285.418 740.337 C 283.060 747.169 277.294 752.397 270.848 755.665 C 264.402 758.934 257.248 760.491 250.183 762.018 L 248.793 763.168 C 237.579 737.845 229.478 710.147 232.896 682.663 Z" fill="#e6e6e6"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_914cd830_b574_45d8_8f5f_c1453a0644a9" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -248.16799926757812px; top: -618.573486328125px;">
+        <path id="guid_914cd830_b574_45d8_8f5f_c1453a0644a9-path" d="M 279.818 619.676 C 264.554 636.779 255.067 658.257 252.704 681.059 C 252.108 685.958 252.289 690.922 253.238 695.765 C 254.316 700.453 256.629 704.768 259.938 708.260 C 262.958 711.577 266.431 714.622 268.592 718.616 C 270.767 722.784 271.061 727.683 269.398 732.081 C 267.490 737.553 263.730 742.012 259.902 746.246 C 255.651 750.946 251.161 755.761 249.354 761.993 C 249.135 762.748 247.977 762.364 248.195 761.610 C 251.339 750.768 261.864 744.610 266.883 734.845 C 269.225 730.288 270.208 724.998 268.012 720.188 C 266.092 715.982 262.513 712.840 259.427 709.507 C 256.149 706.148 253.743 702.037 252.421 697.534 C 251.227 692.755 250.856 687.807 251.323 682.903 C 252.198 671.845 254.805 660.994 259.051 650.747 C 263.831 639.024 270.582 628.206 279.010 618.761 C 279.532 618.176 280.336 619.095 279.818 619.676 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_3490fd18_2205_4b71_aa9e_7b65e3b38805" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -240.52957153320312px; top: -655.9725952148438px;">
+        <path id="guid_3490fd18_2205_4b71_aa9e_7b65e3b38805-path" d="M 253.033 673.672 C 245.243 671.781 239.970 664.524 240.577 656.531 C 240.639 655.748 241.859 655.808 241.797 656.591 C 241.217 664.037 246.148 670.794 253.416 672.513 C 254.180 672.695 253.793 673.853 253.033 673.672 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_6d92725f_f447_4ae9_8bfe_b36fa9754920" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -257.87841796875px; top: -688.2056274414062px;">
+        <path id="guid_6d92725f_f447_4ae9_8bfe_b36fa9754920-path" d="M 258.186 706.779 C 264.998 702.711 270.027 696.226 272.270 688.615 C 272.492 687.860 273.651 688.244 273.429 688.997 C 271.081 696.913 265.833 703.652 258.735 707.869 C 258.058 708.271 257.513 707.178 258.186 706.779 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_e8820ba7_5c19_49e5_837a_74c822928112" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -264.16717529296875px; top: -639.6439208984375px;">
+        <path id="guid_e8820ba7_5c19_49e5_837a_74c822928112-path" d="M 264.964 640.180 C 267.779 641.517 271.077 641.350 273.742 639.734 C 274.413 639.325 274.958 640.417 274.291 640.825 C 271.340 642.595 267.703 642.788 264.581 641.339 C 264.269 641.225 264.099 640.887 264.193 640.568 C 264.300 640.249 264.644 640.076 264.964 640.180 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_ed8fca67_0754_4782_a4f7_055129e5f569" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -248.19229125976562px; top: -665.3231811523438px;">
+        <path id="guid_ed8fca67_0754_4782_a4f7_055129e5f569-path" d="M 359.454 668.246 C 359.042 668.514 358.630 668.782 358.218 669.060 C 352.697 672.690 347.481 676.762 342.621 681.237 C 342.239 681.577 341.858 681.927 341.487 682.277 C 329.892 693.182 320.422 706.146 313.559 720.508 C 310.833 726.226 308.546 732.142 306.718 738.207 C 304.194 746.582 302.123 755.864 297.127 762.715 C 296.614 763.436 296.056 764.124 295.458 764.776 L 250.304 764.776 C 250.201 764.724 250.098 764.683 249.995 764.631 L 248.192 764.714 C 248.265 764.394 248.347 764.065 248.419 763.745 C 248.460 763.560 248.512 763.375 248.553 763.189 C 248.584 763.066 248.615 762.942 248.635 762.829 C 248.646 762.787 248.656 762.746 248.666 762.715 C 248.687 762.602 248.718 762.499 248.739 762.396 C 249.192 760.552 249.659 758.708 250.140 756.864 C 250.140 756.853 250.140 756.853 250.150 756.843 C 253.848 742.802 258.752 728.945 265.603 716.274 C 265.809 715.893 266.015 715.501 266.241 715.120 C 269.361 709.425 272.941 703.995 276.945 698.884 C 279.147 696.092 281.489 693.414 283.961 690.859 C 290.362 684.269 297.760 678.728 305.883 674.437 C 322.078 665.886 340.827 662.610 358.135 667.833 C 358.578 667.967 359.011 668.101 359.454 668.246 Z" fill="#e6e6e6"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_d7f8f239_ce5f_4b04_914e_6b46b71f2eea" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -248.40248107910156px; top: -667.58837890625px;">
+        <path id="guid_d7f8f239_ce5f_4b04_914e_6b46b71f2eea-path" d="M 359.352 668.819 C 336.867 673.285 316.362 684.722 300.747 701.505 C 297.321 705.058 294.477 709.130 292.319 713.569 C 290.357 717.961 289.607 722.799 290.146 727.579 C 290.560 732.046 291.500 736.568 290.821 741.058 C 290.048 745.696 287.333 749.784 283.357 752.294 C 278.540 755.514 272.853 756.811 267.247 757.887 C 261.023 759.080 254.539 760.222 249.345 764.109 C 248.715 764.581 248.021 763.576 248.650 763.106 C 257.687 756.342 269.798 757.762 279.685 752.987 C 284.299 750.758 288.268 747.127 289.411 741.964 C 290.411 737.450 289.445 732.786 288.987 728.267 C 288.392 723.611 288.947 718.881 290.601 714.489 C 292.526 709.954 295.209 705.780 298.534 702.146 C 305.890 693.843 314.505 686.749 324.065 681.124 C 334.939 674.642 346.842 670.069 359.259 667.602 C 360.028 667.449 360.116 668.667 359.353 668.819 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_fb626729_401a_4a00_af1f_80f95e2eca94" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -301.748779296875px; top: -674.410888671875px;">
+        <path id="guid_fb626729_401a_4a00_af1f_80f95e2eca94-path" d="M 305.456 695.805 C 300.375 689.605 300.533 680.636 305.831 674.619 C 306.352 674.032 307.290 674.814 306.768 675.402 C 301.823 680.998 301.692 689.362 306.459 695.110 C 306.960 695.715 305.954 696.407 305.456 695.805 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_130e1116_682a_4ea8_859b_79bc8c9b67bb" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -288.9325256347656px; top: -719.1956787109375px;">
+        <path id="guid_130e1116_682a_4ea8_859b_79bc8c9b67bb-path" d="M 289.638 725.341 C 297.526 726.195 305.447 724.044 311.820 719.317 C 312.451 718.849 313.145 719.853 312.515 720.321 C 305.874 725.227 297.627 727.448 289.420 726.542 C 288.638 726.455 288.860 725.255 289.638 725.341 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_e2997a48_8f33_4922_90d7_671579b44506" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -334.04248046875px; top: -675.9852905273438px;">
+        <path id="guid_e2997a48_8f33_4922_90d7_671579b44506-path" d="M 335.147 676.247 C 336.589 679.009 339.323 680.862 342.424 681.176 C 343.207 681.253 342.984 682.453 342.206 682.377 C 338.784 682.014 335.764 679.978 334.144 676.942 C 333.963 676.663 334.030 676.291 334.298 676.093 C 334.575 675.903 334.954 675.971 335.147 676.247 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_c7a0ea7e_0879_4236_af10_aaf0e471bb68" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -680.3427124023438px; top: -603.0379638671875px;">
+        <path id="guid_c7a0ea7e_0879_4236_af10_aaf0e471bb68-path" d="M 707.585 696.331 C 684.749 671.537 672.999 634.416 685.311 603.038 C 703.452 634.891 732.274 659.301 766.680 671.948 C 779.966 676.778 795.246 680.766 802.463 692.922 C 806.954 700.486 807.273 709.953 805.238 718.511 C 803.202 727.068 799.021 734.938 794.882 742.699 L 794.856 744.895 C 762.516 735.390 730.421 721.125 707.585 696.331 Z" fill="#e6e6e6"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_bbf13db9_29db_4983_9020_00f04ce57a5b" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -684.5048828125px; top: -602.5137329101562px;">
+        <path id="guid_bbf13db9_29db_4983_9020_00f04ce57a5b-path" d="M 685.998 603.205 C 689.875 630.835 702.359 656.541 721.677 676.672 C 725.759 681.080 730.510 684.816 735.755 687.744 C 740.957 690.432 746.784 691.677 752.629 691.351 C 758.086 691.156 763.645 690.325 769.054 691.460 C 774.637 692.719 779.417 696.300 782.194 701.305 C 785.774 707.380 786.959 714.380 787.879 721.266 C 788.900 728.911 789.840 736.868 794.206 743.448 C 794.735 744.246 793.467 745.020 792.939 744.224 C 785.343 732.776 787.903 718.157 782.782 705.814 C 780.393 700.055 776.253 694.980 770.059 693.236 C 764.642 691.710 758.909 692.562 753.385 692.807 C 747.687 693.209 741.977 692.209 736.755 689.895 C 731.377 687.244 726.490 683.696 722.303 679.405 C 712.722 669.894 704.695 658.937 698.518 646.933 C 691.392 633.272 686.656 618.493 684.513 603.235 C 684.381 602.290 685.867 602.267 685.999 603.205 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_bae7a3a9_8d4d_4949_8444_c9d9712a26cd" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -689.13330078125px; top: -667.342529296875px;">
+        <path id="guid_bae7a3a9_8d4d_4949_8444_c9d9712a26cd-path" d="M 715.075 670.556 C 707.190 676.303 696.303 675.492 689.357 668.640 C 688.679 667.966 689.694 666.881 690.373 667.555 C 696.832 673.950 706.987 674.686 714.300 669.289 C 715.069 668.722 715.840 669.993 715.075 670.556 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_2ed746bc_8619_45d5_a3fa_6dd481cdf9c9" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -743.9594116210938px; top: -663.3340454101562px;">
+        <path id="guid_2ed746bc_8619_45d5_a3fa_6dd481cdf9c9-path" d="M 749.875 691.814 C 751.456 682.287 749.389 672.515 744.085 664.445 C 743.559 663.646 744.826 662.871 745.352 663.670 C 750.856 672.078 752.987 682.252 751.319 692.162 C 751.160 693.106 749.716 692.753 749.875 691.814 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_8619d1fd_700f_4e7d_a3df_4a392388c3a8" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -693.0032348632812px; top: -624.0702514648438px;">
+        <path id="guid_8619d1fd_700f_4e7d_a3df_4a392388c3a8-path" d="M 693.357 633.130 C 696.813 631.568 699.252 628.373 699.848 624.628 C 699.996 623.682 701.439 624.035 701.292 624.975 C 700.615 629.109 697.933 632.638 694.132 634.397 C 693.780 634.597 693.333 634.490 693.111 634.151 C 692.899 633.801 693.009 633.346 693.357 633.130 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_83557afe_25c4_4fd1_9120_1222bee30614" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -754.8629760742188px; top: -567.4530029296875px;">
+        <path id="guid_83557afe_25c4_4fd1_9120_1222bee30614-path" d="M 793.750 567.453 C 793.675 568.046 793.599 568.640 793.533 569.242 C 792.562 577.224 792.241 585.271 792.573 593.305 C 792.589 593.927 792.614 594.557 792.648 595.176 C 793.654 614.524 798.244 633.516 806.183 651.188 C 809.349 658.217 813.045 664.995 817.239 671.464 C 823.032 680.396 830.023 689.621 832.456 699.650 C 832.721 700.694 832.922 701.753 833.056 702.821 L 797.537 744.756 C 797.408 744.811 797.289 744.874 797.160 744.929 L 795.818 746.669 C 795.579 746.350 795.337 746.015 795.098 745.696 C 794.958 745.512 794.826 745.318 794.686 745.134 C 794.596 745.008 794.505 744.882 794.416 744.774 C 794.386 744.732 794.356 744.690 794.335 744.656 C 794.246 744.548 794.175 744.438 794.095 744.338 C 792.739 742.466 791.394 740.582 790.060 738.685 C 790.050 738.677 790.050 738.677 790.048 738.659 C 779.917 724.179 770.906 708.725 764.527 692.395 C 764.335 691.903 764.134 691.404 763.958 690.894 C 761.124 683.517 758.897 675.921 757.300 668.181 C 756.439 663.940 755.793 659.659 755.365 655.353 C 754.281 644.224 754.954 632.994 757.360 622.075 C 762.158 600.308 773.865 580.319 792.330 568.354 C 792.803 568.048 793.268 567.751 793.750 567.453 Z" fill="#e6e6e6"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_cb743138_06ee_4141_900e_05e492d72a47" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -775.9964599609375px; top: -566.7908325195312px;">
+        <path id="guid_cb743138_06ee_4141_900e_05e492d72a47-path" d="M 794.202 567.998 C 780.662 592.393 775.153 620.434 778.457 648.138 C 779.062 654.115 780.606 659.959 783.031 665.455 C 785.567 670.732 789.469 675.235 794.333 678.494 C 798.807 681.624 803.746 684.308 807.381 688.471 C 811.081 692.837 812.742 698.574 811.946 704.241 C 811.147 711.248 807.878 717.550 804.467 723.602 C 800.679 730.322 796.639 737.241 796.163 745.123 C 796.106 746.078 794.627 745.933 794.685 744.979 C 795.512 731.265 806.358 721.134 809.700 708.196 C 811.260 702.159 811.010 695.615 807.115 690.493 C 803.708 686.013 798.617 683.242 794.060 680.112 C 789.268 677.002 785.311 672.766 782.534 667.774 C 779.837 662.419 778.071 656.645 777.311 650.697 C 775.387 637.335 775.576 623.754 777.871 610.450 C 780.406 595.252 785.522 580.600 792.998 567.128 C 793.461 566.294 794.662 567.170 794.202 567.998 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_2add78ad_8b24_4254_9e82_3d2cd2e906e4" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -757.478515625px; top: -621.4161987304688px;">
+        <path id="guid_2add78ad_8b24_4254_9e82_3d2cd2e906e4-path" d="M 776.868 639.280 C 767.112 639.122 758.908 631.919 757.487 622.266 C 757.352 621.320 758.815 621.064 758.952 622.012 C 760.258 631.006 767.923 637.708 777.012 637.801 C 777.968 637.812 777.818 639.291 776.868 639.280 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_d9ed9606_87bc_4345_92dd_522d0465e444" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -791.6136474609375px; top: -651.2191772460938px;">
+        <path id="guid_d9ed9606_87bc_4345_92dd_522d0465e444-path" d="M 791.856 677.206 C 798.854 670.551 803.087 661.504 803.710 651.867 C 803.771 650.912 805.250 651.057 805.189 652.011 C 804.521 662.038 800.097 671.444 792.800 678.353 C 792.104 679.011 791.164 677.860 791.856 677.206 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_5b8f2e7c_f159_47f5_8e09_fb2c3290adc0" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -781.2470703125px; top: -593.2406616210938px;">
+        <path id="guid_5b8f2e7c_f159_47f5_8e09_fb2c3290adc0-path" d="M 782.060 596.322 C 785.760 597.156 789.631 596.073 792.362 593.441 C 793.049 592.775 793.989 593.926 793.306 594.589 C 790.276 597.481 786.010 598.684 781.916 597.801 C 781.515 597.749 781.222 597.394 781.249 596.990 C 781.290 596.582 781.652 596.284 782.060 596.322 Z" fill="#fff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_56f3dd94_5634_441b_a569_2e89c4a39c54" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -170.88140869140625px; top: -633.7352905273438px;">
+        <path id="guid_56f3dd94_5634_441b_a569_2e89c4a39c54-path" d="M 261.165 748.076 C 254.795 748.076 248.411 748.247 242.177 748.592 L 241.270 748.641 C 199.920 751.019 169.675 764.814 170.918 780.731 L 171.159 783.609 C 171.317 785.429 171.486 787.385 171.626 789.555 C 171.701 790.625 173.946 791.446 176.739 791.446 L 1193.847 791.446 C 1265.559 791.163 1337.010 790.807 1406.205 790.387 C 1419.182 790.404 1432.151 789.967 1445.057 789.077 C 1464.286 787.597 1477.633 784.662 1485.863 780.105 L 1485.866 780.105 C 1496.101 774.455 1496.423 767.340 1495.804 759.301 C 1494.543 743.068 1493.293 726.016 1492.045 709.015 C 1490.943 694.031 1489.846 679.088 1488.749 664.781 C 1488.070 656.291 1486.563 648.797 1474.940 643.069 C 1462.342 636.875 1439.366 633.735 1406.650 633.735 C 1406.254 633.735 1405.862 633.735 1405.462 633.736 C 1302.932 633.974 1201.340 656.907 1152.667 690.804 C 1147.062 694.707 1141.839 698.886 1136.788 702.928 C 1129.324 708.898 1121.609 715.071 1112.401 720.592 C 1107.415 723.621 1102.024 726.355 1096.291 728.761 C 1095.896 728.938 1095.443 729.129 1094.965 729.310 C 1093.870 729.773 1092.727 730.221 1091.611 730.619 C 1085.082 733.072 1078.201 735.107 1071.067 736.695 L 1070.346 736.853 C 1069.804 736.979 1069.217 737.104 1068.629 737.220 C 1064.509 738.080 1060.228 738.824 1055.940 739.426 C 1037.387 742.086 1016.289 742.724 993.237 741.319 C 972.067 739.995 951.170 737.225 930.891 733.055 C 909.544 728.666 889.563 723.194 870.240 717.903 C 861.752 715.578 852.973 713.175 844.206 710.897 C 842.558 710.469 840.937 710.050 839.291 709.631 C 828.583 706.916 818.875 704.674 809.613 702.776 C 786.665 698.057 762.911 695.194 738.887 694.255 C 713.387 693.347 690.915 695.060 672.112 699.334 C 666.928 700.508 661.881 701.923 657.008 703.567 C 634.737 711.091 621.007 722.194 607.731 732.932 C 591.215 746.289 574.137 760.101 540.414 767.262 C 501.501 775.531 444.702 772.096 404.517 766.121 C 391.882 764.242 379.264 762.081 367.060 759.990 C 362.131 759.145 357.198 758.307 352.262 757.474 C 342.563 755.845 334.625 754.597 327.281 753.543 L 324.958 753.207 C 323.666 753.024 322.373 752.842 321.056 752.668 C 312.333 751.476 304.211 750.539 296.212 749.802 L 294.319 749.622 C 290.525 749.297 286.978 749.026 283.497 748.799 L 282.107 748.709 C 275.289 748.287 268.235 748.076 261.165 748.076 Z" fill="#f2f2f2"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_c5dd416e_6e11_4a5e_9f54_964d528a32ae" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -360.15234375px; top: -333.81951904296875px;">
+        <path id="guid_c5dd416e_6e11_4a5e_9f54_964d528a32ae-path" d="M 404.393 336.772 C 402.304 335.297 400.019 333.760 397.462 333.821 C 391.276 333.970 387.940 343.040 381.759 342.721 C 377.818 342.517 375.202 338.513 371.532 337.062 C 366.754 335.172 360.674 338.868 360.152 343.979 L 360.766 343.418 C 379.338 347.945 398.612 348.836 417.522 346.040 C 413.146 342.951 408.770 339.861 404.393 336.772 Z" fill="#f2f2f2"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_c8570bc0_693d_4529_bd13_5780a1ab4b11" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -343.15234375px; top: -470.81951904296875px;">
+        <path id="guid_c8570bc0_693d_4529_bd13_5780a1ab4b11-path" d="M 387.393 473.772 C 385.304 472.297 383.019 470.760 380.462 470.821 C 374.276 470.970 370.940 480.040 364.759 479.721 C 360.818 479.517 358.202 475.513 354.532 474.062 C 349.754 472.172 343.674 475.868 343.152 480.979 L 343.766 480.418 C 362.338 484.946 381.612 485.836 400.522 483.040 C 396.146 479.951 391.770 476.861 387.393 473.772 Z" fill="#f2f2f2"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_eba0ff8a_5b06_4c2d_addf_ce3001a6a2c8" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -696.7926025390625px; top: -201.25924682617188px;">
+        <path id="guid_eba0ff8a_5b06_4c2d_addf_ce3001a6a2c8-path" d="M 807.906 215.565 C 802.659 208.420 796.919 200.970 790.499 201.268 C 774.961 201.989 766.583 245.934 751.060 244.388 C 741.161 243.403 734.590 224.002 725.372 216.968 C 713.372 207.810 698.102 225.721 696.793 250.487 L 698.334 247.766 C 744.830 269.691 793.536 274.032 840.882 260.471 C 829.890 245.502 818.898 230.534 807.906 215.565 Z" fill="#f2f2f2"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_6dde1e10_1b8d_47c7_95f2_a8daf6646679" class="hero-element" >
+</div>
+<div id="guid_5ec456b1_0f51_473b_8141_34b70d2ed1ca" class="hero-element" >
+</div>
+<div id="guid_cc48dcd4_6d67_4de1_aa28_d60cfc4695e7" class="hero-element" >
+</div>
+<div id="guid_8c322892_8bad_4ced_9750_5f07d7371795" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -376.20098876953125px; top: -581.6690063476562px;">
+        <path id="guid_8c322892_8bad_4ced_9750_5f07d7371795-path" d="M 376.201 650.637 L 394.082 650.637 L 402.592 581.669 L 376.201 581.669 L 376.201 650.637 Z" fill="#9e616a"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_c6cbcb76_003b_42d3_bc20_e4047d912a51" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -533.8820190429688px; top: -745.2388916015625px;">
+        <path id="guid_c6cbcb76_003b_42d3_bc20_e4047d912a51-path" d="M 537.484 746.944 L 566.051 745.239 L 566.051 757.478 L 593.210 776.235 C 595.963 778.136 597.160 781.607 596.165 784.801 C 595.169 787.996 592.211 790.172 588.866 790.171 L 554.856 790.171 L 548.994 778.065 L 546.705 790.172 L 533.882 790.172 L 537.484 746.944 Z" fill="#2f2e41"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_da391602_cd15_42a0_a8be_7896852474d6" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -269.97100830078125px; top: -572.72802734375px;">
+        <path id="guid_da391602_cd15_42a0_a8be_7896852474d6-path" d="M 269.971 628.072 L 284.320 638.742 L 332.303 588.475 L 311.126 572.728 L 269.971 628.072 Z" fill="#9e616a"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_2200c26e_0773_4e9b_bf89_b43e3f16e89f" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -411.0290222167969px; top: -723.3159790039062px;">
+        <path id="guid_2200c26e_0773_4e9b_bf89_b43e3f16e89f-path" d="M 439.714 723.316 L 463.655 738.994 L 456.351 748.815 L 466.953 780.073 C 468.028 783.242 466.918 786.741 464.212 788.711 C 461.507 790.680 457.836 790.661 455.151 788.664 L 427.860 768.370 L 430.380 755.157 L 421.319 763.506 L 411.029 755.854 L 439.714 723.316 Z" fill="#2f2e41"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_368195b3_f613_419b_924a_d5f3049cdd87" class="hero-element" >
+</div>
+<div id="guid_2c990828_2671_44b2_89d4_9c1e76fdf490" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -461.0159912109375px; top: -403.3500061035156px;">
+        <path id="guid_2c990828_2671_44b2_89d4_9c1e76fdf490-path" d="M 522.502 403.350 C 522.502 403.350 488.576 432.661 504.229 516.218 L 523.339 598.090 L 461.016 701.483 L 480.888 725.658 L 561.909 613.747 L 591.269 544.878 L 606.799 424.178 L 522.502 403.350 Z" fill="#2f2e41"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_911dbb3c_f44f_452e_917b_fafb90ea2dbc" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -368.7640075683594px; top: -455.95001220703125px;">
+        <path id="guid_911dbb3c_f44f_452e_917b_fafb90ea2dbc-path" d="M 407.969 455.950 L 410.009 487.552 L 403.764 622.221 L 374.379 617.104 L 368.764 521.221 L 407.969 455.950 Z" fill="#2f2e41"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_84dce187_8715_485e_8cce_f76aa888ce3f" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -341.3659973144531px; top: -125.73899841308594px;">
+        <path id="guid_84dce187_8715_485e_8cce_f76aa888ce3f-path" d="M 417.086 125.739 L 384.276 127.019 L 371.199 148.725 L 341.366 154.549 L 359.176 244.649 L 341.586 310.039 L 404.791 337.699 L 418.856 295.549 L 437.548 346.649 L 467.559 314.016 L 442.858 251.023 L 455.636 201.329 L 452.764 149.221 L 428.764 146.221 L 417.086 125.739 Z" fill="#2f2e41"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_caf24cc2_26b4_478a_8841_57fceeeced03" class="hero-element" >
+</div>
+<div id="guid_8d3cae67_8f20_44cb_a3cd_358f5f074c8a" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -533.2138671875px; top: -156.2391815185547px;">
+        <path id="guid_8d3cae67_8f20_44cb_a3cd_358f5f074c8a-path" d="M 586.997 161.409 C 575.976 154.690 562.170 154.508 550.976 160.934 C 539.781 167.360 532.976 179.374 533.220 192.279 C 548.955 196.229 565.485 199.252 582.265 193.224 L 586.227 183.525 L 588.564 193.231 C 593.674 195.320 598.797 197.087 603.920 193.211 C 604.346 180.353 597.900 168.239 586.997 161.409 Z" fill="#2f2e41"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_a20f2543_7660_4cef_ad11_b8c2c7ea4427" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -478.1188659667969px; top: -108.55391693115234px;">
+        <path id="guid_a20f2543_7660_4cef_ad11_b8c2c7ea4427-path" d="M 524.916 111.056 C 514.544 106.300 501.529 108.532 492.892 115.989 C 484.256 123.447 480.150 135.584 481.817 146.872 C 483.518 158.388 490.519 168.305 496.972 177.993 C 503.425 187.681 509.730 198.297 509.723 209.938 C 509.712 227.395 495.576 241.551 478.119 241.585 C 487.959 245.822 498.230 250.141 508.931 249.639 C 519.633 249.137 530.850 242.257 532.596 231.687 C 533.854 224.070 530.117 216.643 527.000 209.581 C 521.924 198.073 518.255 185.995 516.072 173.608 C 515.031 167.696 514.354 161.481 516.281 155.796 C 519.432 147.146 527.868 141.574 537.060 142.070 L 540.596 138.889 C 542.169 127.587 535.289 115.812 524.916 111.056 Z" fill="#2f2e41"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_01cfdd90_7aef_4489_b011_f5f185d09bf6" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -167.11524963378906px; top: -788.8396606445312px;">
+        <path id="guid_01cfdd90_7aef_4489_b011_f5f185d09bf6-path" d="M 1490.073 791.221 L 168.946 791.221 C 167.935 791.221 167.115 790.688 167.115 790.030 C 167.115 789.373 167.935 788.840 168.946 788.840 L 1490.073 788.840 C 1491.083 788.840 1491.903 789.373 1491.903 790.030 C 1491.903 790.688 1491.083 791.221 1490.073 791.221 Z" fill="#ccc"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_01ac6bca_f00a_435b_9866_54cfb7d73db0" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -468.51214599609375px; top: -460.7749938964844px;">
+        <path id="guid_01ac6bca_f00a_435b_9866_54cfb7d73db0-path" d="M 509.787 460.775 L 480.275 460.775 C 478.927 460.772 477.647 461.364 476.776 462.392 C 473.788 461.843 470.786 463.285 469.347 465.961 C 467.908 468.638 468.360 471.937 470.466 474.127 C 472.573 476.318 475.852 476.899 478.582 475.565 L 482.030 504.520 C 482.625 506.455 484.413 507.775 486.438 507.775 L 505.626 507.775 C 507.650 507.775 509.438 506.455 510.033 504.520 L 514.195 466.743 C 514.626 465.344 514.366 463.824 513.497 462.647 C 512.627 461.469 511.251 460.775 509.787 460.775 Z M 475.531 474.275 C 472.769 474.275 470.531 472.036 470.531 469.275 C 470.531 466.514 472.769 464.275 475.531 464.275 C 475.622 464.275 475.707 464.297 475.797 464.302 C 475.598 465.107 475.622 465.951 475.867 466.743 L 477.979 473.607 C 477.235 474.039 476.391 474.270 475.531 474.275 Z" fill="#6c63ff"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_68ee6827_1254_434e_b0f5_c190c2e4bea7" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -465.0259704589844px; top: -396.9809875488281px;">
+        <path id="guid_68ee6827_1254_434e_b0f5_c190c2e4bea7-path" d="M 485.261 507.801 C 487.713 505.337 488.947 501.913 488.632 498.452 C 488.316 494.990 486.484 491.846 483.628 489.865 L 502.328 396.981 L 481.677 403.611 L 466.708 493.454 C 463.631 498.586 464.878 505.208 469.612 508.868 C 474.345 512.529 481.068 512.070 485.261 507.801 Z" fill="#9e616a"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_adced330_e750_47b0_a3ca_95c65ab4e04a" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: -461.0362854003906px; top: -263.0987548828125px;">
+        <path id="guid_adced330_e750_47b0_a3ca_95c65ab4e04a-path" d="M 521.297 272.775 L 508.484 263.103 C 508.484 263.103 497.181 262.303 495.179 282.686 C 493.177 303.070 480.643 381.303 480.643 381.303 L 461.036 472.113 L 488.177 478.070 L 509.177 380.070 L 530.199 312.460 L 521.297 272.775 Z" fill="#2f2e41"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+<div id="guid_1ecefcd0_9229_40ad_9791_9786ab121732" class="hero-element" >
+</div>
+</div>
+<div id="guid_ca46f2d7_8970_4492_a157_ca6e9156f971" class="hero-element" hero-fx-jump="{}" >
+<div id="guid_c2cc1bfd_57c0_496c_8391_4f414ee62f70" class="hero-element" >I'm 
+</div>
+<div id="guid_8e83f088_89d7_4b83_8968_6112aa34e29f" class="hero-element" hero-fx-magnet="{}" >joel
+</div>
+</div>
+<div id="guid_470bf6a6_6db3_415f_b34b_4a2407911145" class="hero-element" hero-fx-type="{}" >welcome
+</div>
+<div id="guid_44fbac84_ca07_47de_bcdb_6dacc0c99bf5" class="hero-element" >Made with❤️by Joel
+</div>
+<div id="guid_0f8f05b3_c7d7_45e8_8156_e223077b1ae9" class="hero-element" hero-fx-jump="{}" >about
+</div>
+<div id="guid_c900786a_7174_43b8_82ce_2cb270b45a3d" class="hero-element" hero-fx-jump="{}" >contact
+</div>
+<div id="guid_ff25cc55_f0d7_4178_a3cd_2721e65eca68" class="hero-element" hero-fx-jump="{}" >work
+</div>
+<img id="guid_0e42a456_9ee5_441c_bf03_65f846da2e5f" class="hero-element" src="guid_0e42a456_9ee5_441c_bf03_65f846da2e5f.png" hero-fx-magnet="{}" >
+
+</div>
+              </div>
+            </div> 
+
+
+      
+
+            
+            <div class="fusion--scene fusion--scene--default scene-guid_74eca0c3_3e17_47c6_bbba_8c7b649f0a4b">
+              <div class="fusion--scene--content">
+                
+<div id="guid_74eca0c3_3e17_47c6_bbba_8c7b649f0a4b" class="artboard scene" >
+<div id="guid_a950ff9d_4552_4c61_b020_30cdbac87cda" class="hero-element" >MORE<br/>COMING<br/>SOON
+</div>
+<img id="guid_fe42eb62_1e77_46af_9362_6de97b614aa3" class="hero-element" src="guid_fe42eb62_1e77_46af_9362_6de97b614aa3.png" hero-fx-magnet="{}" >
+
+<div id="guid_f00da2e9_228e_4cff_80c5_a39851b6c5d4" class="hero-element" >
+      <svg width="300" height="300" style="pointer-events: none; overflow: visible; position: absolute; left: 0px; top: -2.6239824295043945px;">
+        <path id="guid_f00da2e9_228e_4cff_80c5_a39851b6c5d4-path" d="M 14.970 24.209 C 15.237 24.202 16.573 24.110 16.770 24.054 C 16.601 23.871 13.704 23.984 11.988 20.566 C 11.686 19.962 11.461 19.329 11.538 18.626 C 11.742 16.833 13.852 16.516 15.195 17.325 C 17.726 18.844 19.645 23.745 23.189 24.180 C 25.791 24.497 29.138 22.985 30.797 20.988 C 30.755 20.981 30.741 20.974 30.727 20.981 C 30.698 20.988 30.670 20.995 30.649 21.002 C 28.308 21.853 24.019 21.684 21.178 19.962 C 18.534 18.359 17.445 15.834 17.536 14.716 C 17.663 13.219 19.146 13.085 20.060 13.338 C 21.073 13.613 21.776 14.576 22.795 15.265 C 23.892 15.996 25.109 16.228 26.402 15.989 C 27.450 15.799 28.821 15.124 28.969 14.970 C 28.891 14.962 28.842 14.962 28.793 14.955 C 28.357 14.913 27.921 14.899 27.492 14.836 C 19.673 13.676 18.429 3.333 9.738 2.665 C 6.623 2.426 2.749 3.234 0.155 5.126 C 0.098 5.168 0.049 5.210 0 5.252 C 0.007 5.266 0.007 5.273 0.014 5.287 C 0.070 5.287 0.127 5.280 0.183 5.273 C 0.626 5.203 1.062 5.217 1.498 5.295 C 3.171 5.597 4.852 6.919 5.428 10.673 C 5.801 13.085 5.379 14.245 5.991 16.727 C 7.327 22.148 12.389 24.293 14.970 24.209 Z M 5.295 4.563 C 5.231 4.493 5.231 4.479 5.203 4.423 C 6.054 4.240 6.905 4.134 7.777 4.085 C 7.699 5.119 6.216 5.583 5.295 4.563 Z M 19.139 29.208 C 16.130 29.292 12.670 27.330 10.455 24.891 C 10.132 24.539 9.274 23.470 9.148 23.245 L 9.176 23.217 C 9.640 23.505 10.983 24.525 13.029 25.116 C 14.730 25.608 16.411 25.559 18.063 24.884 C 19.659 24.230 20.946 24.848 21.094 25.087 C 19.793 25.355 19.680 25.397 19.406 25.643 C 19.048 25.952 19.083 26.466 19.898 26.852 C 21.741 27.724 24.328 26.655 26.733 28.638 C 26.902 28.779 27.302 29.187 27.443 29.391 C 27.436 29.405 27.422 29.412 27.415 29.426 C 27.077 29.320 26.262 28.898 24.588 28.772 C 22.852 28.631 21.333 29.145 19.139 29.208 Z M 31.430 11.489 C 32.583 11.123 34.334 10.547 36.105 11.257 C 37.237 11.714 37.948 12.572 38.362 13.690 C 38.609 14.351 38.721 15.075 38.721 15.708 C 38.707 15.708 38.693 15.708 38.679 15.715 C 38.665 15.687 38.651 15.652 38.644 15.623 C 38.292 14.077 36.541 12.544 33.891 13.521 C 30.361 14.829 24.722 14.203 21.452 10.146 C 21.403 10.083 21.284 10.027 21.361 9.921 C 21.368 9.907 21.509 9.963 21.572 10.013 C 22.845 10.955 24.265 11.552 25.812 11.855 C 27.956 12.284 29.651 12.059 31.430 11.489 Z M 38.651 19.751 C 36.373 19.765 36.274 23.273 31.366 24.279 C 30.087 24.539 28.645 24.602 28.209 24.574 L 28.209 24.546 C 28.406 24.441 29.243 24.363 30.298 23.379 C 30.853 22.866 31.373 22.317 31.901 21.769 C 33.272 20.348 34.812 18.802 37.659 19.027 C 39.284 19.153 39.720 19.603 40.198 19.920 C 40.219 19.934 40.226 19.955 40.247 19.983 C 40.212 19.983 40.198 19.990 40.184 19.983 C 39.691 19.793 39.178 19.751 38.651 19.751 Z M 37.786 18.056 C 37.779 18.070 37.779 18.084 37.772 18.098 C 35.740 17.789 34.397 17.543 32.955 18.380 C 31.760 19.076 30.748 19.821 28.596 20.095 C 26.691 20.334 25.425 20.264 23.948 19.533 C 23.927 19.519 23.906 19.505 23.878 19.491 C 23.878 19.477 23.885 19.470 23.885 19.455 C 25.636 19.723 26.445 19.814 27.787 19.048 C 29.355 18.141 30.607 17.177 32.801 16.868 C 34.882 16.580 36.408 17.044 37.786 18.056 Z M 18.886 6.841 C 18.844 6.799 18.809 6.757 18.738 6.680 C 19.273 6.680 20.827 6.595 22.493 7.270 C 23.878 7.833 24.757 8.747 26.023 9.584 C 26.803 10.097 27.668 10.237 28.582 10.153 C 28.884 10.125 29.180 10.069 29.482 10.034 C 29.510 10.027 29.545 10.034 29.588 10.055 C 29.545 10.083 29.503 10.118 29.461 10.139 C 28.891 10.420 28.287 10.582 27.661 10.638 C 25.826 10.821 24.124 10.378 22.500 9.555 C 21.143 8.859 19.941 7.945 18.886 6.841 Z M 45 23.604 C 44.754 23.822 43.404 24.420 41.998 23.977 C 41.133 23.702 40.627 22.929 39.776 22.282 C 39.073 21.748 38.306 21.727 37.800 21.691 C 37.842 21.635 37.863 21.607 37.884 21.593 C 38.925 20.946 40.029 20.735 41.210 21.136 C 42.089 21.431 42.560 22.085 43.348 22.837 C 44.107 23.569 44.824 23.534 44.972 23.576 C 44.979 23.569 44.986 23.576 45.000 23.604 Z M 30.059 33.237 C 30.213 33.321 30.171 33.342 30.164 33.377 C 28.863 33.279 27.780 32.843 26.873 31.816 C 25.341 30.080 23.941 29.855 23.456 29.728 C 23.491 29.714 23.513 29.700 23.534 29.700 C 24.455 29.707 25.369 29.749 26.269 29.974 C 28.048 30.424 28.730 31.760 29.194 32.456 C 29.419 32.794 29.707 33.040 30.059 33.237 Z" fill="#000"  stroke-width="1" style="pointer-events: all" />
+      </svg>
+    
+</div>
+</div>
+              </div>
+            </div> 
+
+
+      
+
+            </div>
+          </div>
+        </div>
+
+      
+
+
+  <!-- Hero/Fusion Player -->
+  <script>
+    
+      document.addEventListener('DOMContentLoaded', function () {
+        window.player = new fusion.Player({
+          id: 'player',
+          // debug: true, 
+          scenes: [
+            
+            { 
+              id: 'guid_5162e834_d235_45f3_a24b_43ef3ca86ffa', 
+              type: 'flat', 
+              width: 1920, 
+              height: 1080,
+              fit: true, 
+              center: true,
+              plugins: [
+                // {id: 'visualDebugger', options: {centerV: true}},
+              ]
+            },              
+      
+            { 
+              id: 'guid_74eca0c3_3e17_47c6_bbba_8c7b649f0a4b', 
+              type: 'flat', 
+              width: 1920, 
+              height: 1080,
+              fit: true, 
+              center: true,
+              plugins: [
+                // {id: 'visualDebugger', options: {centerV: true}},
+              ]
+            },              
+      
+          ]
+        });
+        player.loadScene('guid_5162e834_d235_45f3_a24b_43ef3ca86ffa');      
+      });
+    
+  </script>
+
+  <!-- Hero Scenes -->
+  <script>
+    
+      //---
+      // Scene: guid_5162e834_d235_45f3_a24b_43ef3ca86ffa
+      document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function() {
+          var log = console.log;
+          var player = window.player;
+          var scene = window.player.getScene('guid_5162e834_d235_45f3_a24b_43ef3ca86ffa');          
+    
+          //---
+          // guid_470bf6a6_6db3_415f_b34b_4a2407911145 : load
+          (function() {
+            try {
+              var el = document.getElementById('guid_470bf6a6_6db3_415f_b34b_4a2407911145');
+              hero.add( el, 'load', {start: function(element) {
+                
+              }.bind(el)} );
+            } catch (err) {
+              console.log("Error in custom script (guid_470bf6a6_6db3_415f_b34b_4a2407911145 : load) : ", err);
+            }
+          })();
+        
+            //---
+            // guid_0f8f05b3_c7d7_45e8_8156_e223077b1ae9 : Interaction (tap)
+            document.getElementById('guid_0f8f05b3_c7d7_45e8_8156_e223077b1ae9').addEventListener('click', function() { player.loadScene('guid_74eca0c3_3e17_47c6_bbba_8c7b649f0a4b') });
+            
+            //---
+            // guid_c900786a_7174_43b8_82ce_2cb270b45a3d : Interaction (tap)
+            document.getElementById('guid_c900786a_7174_43b8_82ce_2cb270b45a3d').addEventListener('click', function() { player.loadScene('guid_74eca0c3_3e17_47c6_bbba_8c7b649f0a4b') });
+            
+            //---
+            // guid_ff25cc55_f0d7_4178_a3cd_2721e65eca68 : Interaction (tap)
+            document.getElementById('guid_ff25cc55_f0d7_4178_a3cd_2721e65eca68').addEventListener('click', function() { player.loadScene('guid_74eca0c3_3e17_47c6_bbba_8c7b649f0a4b') });
+            
+        }, 1);
+      }); // Scene end    
+    
+      //---
+      // Scene: guid_74eca0c3_3e17_47c6_bbba_8c7b649f0a4b
+      document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function() {
+          var log = console.log;
+          var player = window.player;
+          var scene = window.player.getScene('guid_74eca0c3_3e17_47c6_bbba_8c7b649f0a4b');          
+    
+            //---
+            // guid_fe42eb62_1e77_46af_9362_6de97b614aa3 : Interaction (tap)
+            document.getElementById('guid_fe42eb62_1e77_46af_9362_6de97b614aa3').addEventListener('click', function() { player.loadScene('guid_5162e834_d235_45f3_a24b_43ef3ca86ffa') });
+            
+        }, 1);
+      }); // Scene end    
+    
+  </script>
+
+  <!-- Hero Timelines -->
+  <script>
+    
+    //---
+    // Scene: guid_5162e834_d235_45f3_a24b_43ef3ca86ffa
+    document.addEventListener('DOMContentLoaded', function () {
+      var player = window.player;
+      var scene = window.player.getScene('guid_5162e834_d235_45f3_a24b_43ef3ca86ffa');
+      var log = console.log;
+      var tl = gsap.timeline({paused: true});
+      scene.timeline = tl;
+      
+    });
+    
+    //---
+    // Scene: guid_74eca0c3_3e17_47c6_bbba_8c7b649f0a4b
+    document.addEventListener('DOMContentLoaded', function () {
+      var player = window.player;
+      var scene = window.player.getScene('guid_74eca0c3_3e17_47c6_bbba_8c7b649f0a4b');
+      var log = console.log;
+      var tl = gsap.timeline({paused: true});
+      scene.timeline = tl;
+      
+    });
+    
+  </script>
+
+  
+  
+</body>
+</html>
